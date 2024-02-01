@@ -25,7 +25,7 @@ def export_dataframe(df, filename, file_type, directory="/Users/Shared/BaseballH
     if not file_type.startswith("."):
         file_type = "." + file_type
 
-    full_path = os.path.join(directory, filename, file_type)
+    full_path = os.path.join(directory, filename + file_type)
 
     match file_type:
         case ".csv":
